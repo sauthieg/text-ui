@@ -24,6 +24,7 @@
   <groupId>org.ow2.util</groupId>
   <artifactId>text-ui</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  <name>OW2 Util :: Text UI</name>
 
   <dependencies>
     <dependency>
