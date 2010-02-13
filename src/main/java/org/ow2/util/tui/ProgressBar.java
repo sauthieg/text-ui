@@ -75,6 +75,9 @@ public class ProgressBar implements ITextualComponent {
     }
 
     public void setValue(int value) {
+        if (value < 0) {
+            value = 0;
+        }
         this.value = value;
     }
 
