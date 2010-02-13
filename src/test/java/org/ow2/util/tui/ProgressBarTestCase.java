@@ -25,6 +25,7 @@ public class ProgressBarTestCase {
     @Test
     public void testEmptyBar() {
 
+        // Empty bar
         bar.setValue(0);
 
         StringBuilder sb = new StringBuilder();
