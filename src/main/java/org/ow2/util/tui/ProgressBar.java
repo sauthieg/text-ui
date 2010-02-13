@@ -76,9 +76,12 @@ public class ProgressBar implements ITextualComponent {
 
     public void setValue(int value) {
         if (value < 0) {
-            value = 0;
+            this.value = 0;
+        } else if (value > progressBarSize) {
+            this.value = progressBarSize;
+        } else {
+            this.value = value;
         }
-        this.value = value;
     }
 
     public int getProgressBarSize() {
