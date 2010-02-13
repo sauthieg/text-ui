@@ -46,16 +46,19 @@ public class TrimTextProcessor implements ITextProcessor {
             return text;
         }
 
-        int extraChars = msgLength - size - replacementText.length();
-        if (extraChars < 0) {
-            // authorized text size is not long enough to accept the middle part replacement
-            // just cut the text to the size
+        if (size <= replacementText.length()) {
+            // The replacement text is longer than the requested
+            // size, so truncate the text value
             return text.substring(0, size);
         }
+        // Text is longer than the requested size
 
-        int cutPoint = (size - replacementText.length()) / 2;
-        String first = text.substring(0, cutPoint - 1);
-        String second = text.substring(cutPoint + 2 + extraChars + replacementText.length());
+        int remainingTextSize = (size - replacementText.length());
+
+        int cutPoint = remainingTextSize / 2;
+        int modulo = remainingTextSize % 2; // To know if this is odd or even size
+        String first = text.substring(0, cutPoint + modulo);
+        String second = text.substring(text.length() - cutPoint);
 
         return first + replacementText + second;
 
