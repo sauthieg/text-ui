@@ -14,6 +14,7 @@
  limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <parent>
     <groupId>org.ow2</groupId>
     <artifactId>ow2</artifactId>
@@ -25,6 +26,31 @@
   <artifactId>text-ui</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <name>OW2 Util :: Text UI</name>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:git://github.com/sauthieg/text-ui.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/sauthieg/text-ui.git</developerConnection>
+    <url>http://github.com/sauthieg/text-ui</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>sauthieg</id>
+      <name>Guillaume Sauthier</name>
+      <email>guillaume.sauthier@ow2.org</email>
+      <roles>
+        <role>Developer</role>         
+      </roles>
+    </developer>
+  </developers>
 
   <dependencies>
     <dependency>
