@@ -7,15 +7,25 @@ This library has to be used to create formatted ASCII line.
 Components
 --------
 
-# ProgressBar
+## ProgressBar
     Sample output: [****   ]
 * Delimiter chars + progress chare are modifiable
 
-# BoundedText
+## BoundedText
     Sample output: >bounded values<
 * Define a text zone, supports alignment (left/right/center)
 * Too long strings will be cropped
 * Too small strings will be completed with spaces 
+
+Toughts (for the future)
+--------
+
+* Ansi support (Support coloring)
+* Multiline support
+* Provide a component for Ascii Art display
+* Table support
+* Use a PrintStream instead of a StringBuilder as paint() parameter
+* List support
 
 Building
 --------
