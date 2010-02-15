@@ -9,7 +9,7 @@ Components
 
 ## ProgressBar
     Sample output: [****   ]
-* Delimiter chars + progress chare are modifiable
+* Delimiter chars + progress chars are modifiable
 
 ## BoundedText
     Sample output: >bounded values<
